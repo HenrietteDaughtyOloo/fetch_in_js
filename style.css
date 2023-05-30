@@ -144,6 +144,7 @@ nav {
   #sectionTwo{
     display: flex;
     justify-content: space-between;
+    margin-top: 25%;
   }
   #imgOne{
     width: 70%;
@@ -262,15 +263,15 @@ input{
 }
 
 .gadget1{
-  background-color: #59e0f8;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 79%;
+  /* background-color: #59e0f8; */
+  color: #111;
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+  width: 00;
   height: 72vh;
 }
 #gadget2{
-  
-  
+  width: 97vw;  
   margin-left: 20%;
 }
 .trusted{
@@ -321,5 +322,64 @@ input{
   margin-bottom: 2%;
   text-align: center;
 }
+
+#fourthSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#headPhones{
+  border: solid rgb(122, 59, 122);
+  border-radius: 5px;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+#camera{
+  border: solid rgb(122, 59, 122);
+  border-radius: 5px;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.fifthSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: solid rgb(122, 59, 122);
+  background-color:  rgb(122, 59, 122);
+  border-radius: 5px;
+  margin-bottom: 2%;
+  text-align: center;
+
+
+}
+#imageFour{
+  width: 100%;
+  /* height: fit-content; */
+}
+
+#headingA{
+  text-align: center;
+}
+/* .lastImage{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+} */
+#sixthSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* justify-content: space-between; */
+
+
+}
+#words1{
+  margin-top: 5%;
+}
+
+
+
 
 
