@@ -32,15 +32,15 @@
 // displayProducts()
 
 
-function generateProductCards(data) {
-    const productContainer = document.getElementById("sec_three");
+function collectionOfProducts(info) {
+    const productCollection = document.getElementById("thirdSection");
     //here, you have to loop through so as to arrange each product in it's own collection
-    data.forEach((product) => {
+    info.forEach((product) => {
       // coming up with a card collection
-      const card = document.createElement("div");
-      card.classList.add("product-card");
-      // Set the card content using the product data
-      card.innerHTML = `
+      const oneCollection = document.createElement("div");
+      oneCollection.classList.add("product-card");
+      // Include the product data per collection
+      oneCollection.innerHTML = `
               <img src="${product.thumbnail}" alt="${product.name}" />
               <h2>${product.title}</h2>
               <div class='productPrice'>
@@ -48,21 +48,21 @@ function generateProductCards(data) {
               <button>ADD TO CART</button>
               </div>
           `;
-      // append the card to the product container
-      productContainer.appendChild(card);
+      // now you have to push that is append it to the holding collection made earlier
+      productCollection.appendChild(oneCollection);
     });
   }
-  function fetchProducts() {
+  function displayProducts() {
     fetch("https://dummyjson.com/products")
       .then((response) => response.json())
-      .then((data) => {
-        // Get the first 8 products from the data
-        const returnedData = data.products.slice(0, 12);
-        // call the function to generate cards
-        generateProductCards(returnedData);
+      .then((info) => {
+        // to access the first 6 products
+        const collectionInfo = info.products.slice(0, 6);
+        // the function therefore must be called to display the collection
+        collectionOfProducts(collectionInfo);
       });
   }
-  fetchProducts()
+  displayProducts()
   
   
   

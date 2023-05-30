@@ -310,7 +310,7 @@ input{
   font-weight: bold;
   /* color:white */
 }
-#sec_three{
+#thirdSection{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -321,4 +321,5 @@ input{
   margin-bottom: 2%;
   text-align: center;
 }
+
 
